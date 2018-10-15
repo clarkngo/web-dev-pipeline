@@ -1,0 +1,12 @@
+<div class="booyah-box col-10 offset-1">
+  <h1>Enter Your Coding Resource Details</h1>
+  <%= simple_form_for @coding_resource do |f| %>
+    <%= f.input :title %>
+    <%= f.input :programming_language %>
+    <%= f.input :classification %>
+    <%= f.input :resource_type %>
+    <%= f.input :description %>
+    <br />
+    <%= f.submit 'Create', class: 'btn btn-primary' %>
+  <% end %>
+</div>
