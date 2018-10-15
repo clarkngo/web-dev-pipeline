@@ -1,0 +1,2 @@
+class CodingResourcesController < ApplicationController
+end
