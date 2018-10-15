@@ -5,3 +5,7 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+CodingResource.create(title: 'freeCodeCamp', programming_language: 'javascript',
+classification: 'web development', resource_type: 'website', description: 'http://freecodecamp.com'
+)

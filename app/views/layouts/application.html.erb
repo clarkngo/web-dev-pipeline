@@ -9,6 +9,25 @@
   </head>
 
   <body>
+    <nav class="navbar navbar-toggleable-md navbar-inverse bg-inverse">
+      <ul class="navbar-nav mr-auto mt-2 mt-md-0">
+        <li class="nav-item">
+          <%= link_to new_coding_resource_path, class: 'nav-link' do %>
+          <i class="fa fa-plus-circle"></i>
+            New Coding Resource
+          <% end %>
+        </li>
+      </ul>
+    </nav>
+    <div class="container">
+      <br />
+      <% if flash[:error].present? %>
+        <div class="col-10 offset-1 alert alert-danger">
+          <%= flash[:error].html_safe %>
+        </div>
+      <% end %>
+    </div>
     <%= yield %>
   </body>
 </html>
+
