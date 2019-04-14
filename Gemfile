@@ -7,8 +7,8 @@ end
 
 gem "font-awesome-rails", '~> 4.7.0.4'
 gem 'simple_form'
-gem 'popper_js', '~> 1.11.1'
-gem 'bootstrap', '4.0.0.alpha6'
+gem 'popper_js', '< 2', '>= 1.12.9'
+gem "bootstrap", ">= 4.3.1"
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.0.7'
 # Use postgresql as the database for Active Record
